@@ -1,0 +1,181 @@
+﻿* {
+  padding: 0; margin: 0;
+  box-shadow: 1px 1px 1px #ccc;
+}
+#contains-app,
+#contains-app * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-size: 2vw;
+  margin: .1rem 0;
+}
+/*/^ dev style rules*/
+#contains-app {
+  /*/header*/
+  /*/article*/
+  /*/footer*/
+}
+#contains-app ul {
+  list-style: none;
+}
+#contains-app > header {
+  /*/section*/
+  /*/nav*/
+  position: relative;
+}
+#contains-app > header > img,
+#contains-app > header > section {
+  display: inline-block;
+}
+#contains-app > header > img {
+  width: 10%;
+}
+#contains-app > header > section {
+  white-space: nowrap;
+  position: relative;
+  
+}
+
+#contains-app > header > section > h1 {
+font-size: 6vw;
+vertical-align: top;
+}
+#contains-app > header > section > h2 {
+vertical-align: bottom;
+}
+#contains-app > header > section.login-widget {
+  text-align: right;
+  position: absolute;
+  right: 2%;
+  padding: 1%;
+}
+#contains-app > header nav {
+  /*/ul*/
+}
+#contains-app > footer nav button,
+#contains-app > header nav button {
+  display: none;
+  width: 100%;
+}
+#contains-app > footer nav ul,
+#contains-app > header nav ul {
+  white-space: nowrap;
+  text-align: center;
+  /*/li*/
+}
+#contains-app > header nav ul li {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  /*/a*/
+}
+#contains-app > header nav ul li a {
+  display: block;
+  padding: 2% 0;
+  text-decoration: none;
+}
+#contains-app #contains-content {
+  text-align: center;
+  position: relative;
+}
+
+#contains-content > article {
+  margin: .61vh .4vw;
+  background: #cc2fe0;
+  transition: 0.75s all ease-in-out;
+}
+#contains-content > article > button {
+display: none;
+}
+#contains-app #contains-content > article span {
+  display: none;
+}
+#contains-app #contains-content > article p {
+  text-align: center;
+}
+
+#contains-content article:nth-child(2),
+#contains-content article:nth-child(3),
+#contains-content article:nth-child(4) {
+  width: 32%;
+  display: inline-block;
+  background: #07fe3e;
+}
+#contains-content article:nth-child(5),
+#contains-content article:nth-child(6) {
+  width: 48.7%;
+  display: inline-block;
+  background: #c3f2ef;
+  /*/p*/
+}
+#contains-app > footer {
+  /*/nav*/
+}
+#contains-app > footer nav {
+  /*ul*/
+}
+#contains-app > footer nav ul {
+  white-space: nowrap;
+  /*/li*/
+}
+#contains-app > footer nav ul li {
+  display: inline-block;
+  text-align: center;
+  /*/a*/
+}
+#contains-app > footer nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 2.5% 0;
+}
+/*/#contains-app*/
+@media all and (min-width: 900px) {
+  
+  #contains-app > header nav ul li,
+  #contains-app > footer nav ul li {
+    display: inline-block;
+    width: 24.5%;
+  }
+  #contains-content > article {
+    display: inherit;
+    width: 99%;
+  }
+  #contains-content > article > span {
+    display: none;
+  }
+}
+@media all and (max-width: 901px) {
+  #contains-app > header >  nav > button,
+    #contains-app > footer >  nav > button {
+    display: block;
+  }
+  
+  #contains-app footer nav ul li,
+  #contains-app header nav ul li {
+    display: none;
+    width: 100%;
+  }
+  #contains-app #contains-content article {
+    display: block;
+    width: 100%;
+  }
+}
+
+/*helper style rules*/
+.tile_expanded {
+   width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  display: block !important;
+  position: absolute;
+  opacity: 1 !important;
+}
+.tile_expanded > button {
+display: block;
+  z-index: 1;
+}
+.expanded-content {
+  display: none;
+}
